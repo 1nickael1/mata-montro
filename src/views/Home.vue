@@ -1,26 +1,18 @@
 <template>
   <div class="home">
-    <button @click="logout">Logout</button>
-    <MataMonstro/>
+    <img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import firebase from 'firebase'
 // @ is an alias to /src
-import MataMonstro from '@/components/MataMonstro.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'home',
   components: {
-    MataMonstro
-  },
-  methods: {
-    logout: function() {
-      firebase.auth().signOut().then(() => {
-        this.$router.replace('login')
-      })
-    }
+    HelloWorld
   }
 }
 </script>
