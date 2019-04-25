@@ -3,7 +3,6 @@ import firebase from 'firebase'
 import App from './App.vue'
 import router from './router/index.js'
 import './plugins/axios'
-import router from './router'
 
 Vue.config.productionTip = false
 
